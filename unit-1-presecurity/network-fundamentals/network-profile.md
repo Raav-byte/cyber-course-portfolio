@@ -2,126 +2,70 @@
 
 ## Identity
 
-* IPv4 address:
-* Subnet mask / CIDR:
-* MAC address:
-* Network address:
-* Broadcast address:
+* IPv4 address: `172.20.10.2`
+* Subnet mask / CIDR: `255.255.255.240` (`/28`)
+* MAC address: `70-08-94-DA-xx-xx`
+* Network address: `172.20.10.0`
+* Broadcast address: `172.20.10.15`
 
-### Q1
+**Q1:** My IPv4 address is `172.20.10.2` and my MAC address is `70-08-94-DA-xx-xx`.
 
-My IPv4 address is:
+**Q2:** A private IP is used inside a local network, while a public IP is used on the internet. Private IPs let multiple devices use the same internet connection.
 
-My MAC address is:
+**Q3:** An IP address works at Layer 3 and can change. A MAC address works at Layer 2 and is normally connected to the network hardware.
 
-### Q2
+**Q4:** A `/28` has 16 total addresses and 14 usable addresses. My network address is `172.20.10.0` and my broadcast address is `172.20.10.15`.
 
-A private IP address is used inside a local network and is not directly routable on the public internet. A public IP address is used for communication over the internet. Routers use private IP addresses inside local networks so multiple devices can share an internet connection.
+## Gateway and reachability
 
-### Q3
+* Default gateway: `172.20.10.1`
+* Ping to gateway (avg): `12 ms`
+* Ping to 1.1.1.1 (avg): `49 ms`
 
-An IP address operates at OSI Layer 3 (Network) and can change. A MAC address operates at OSI Layer 2 (Data Link) and is normally associated with the network interface hardware, although it can be changed or spoofed in software.
+**Q5:** My gateway is `172.20.10.1`. It is on the same subnet as my computer.
 
-### Q4
+**Q6:** The gateway was faster because it is on my local network. `1.1.1.1` is reached through the internet.
 
-A /24 subnet contains 256 total addresses and 254 usable host addresses.
-
-My network address is:
-
-My broadcast address is:
-
-## Gateway and Reachability
-
-* Default gateway:
-* Ping to gateway (average):
-* Ping to 1.1.1.1 (average):
-
-### Q5
-
-My default gateway is:
-
-It is on the same subnet as my machine because:
-
-### Q6
-
-The average ping to my gateway was:
-
-The average ping to 1.1.1.1 was:
-
-The gateway was faster because it is on my local network, while 1.1.1.1 is reached through the internet.
-
-### Q7
-
-DNS made it possible to use example.com instead of an IP address because DNS translates domain names into IP addresses.
+**Q7:** DNS allowed me to use `example.com` instead of an IP address.
 
 ## DNS
 
-* Configured DNS server(s):
-* example.com resolves to:
-* google.com resolves to:
-* github.com resolves to:
+* Configured DNS server(s): `172.20.10.1`, `fe80::f8e5:ceff:fed0:5964`
+* example.com resolves to: `2606:4700:10::ac42:93f3`, `2606:4700:10::6814:179a`
 
-### Q8
+**Q8:** My computer uses `172.20.10.1` and an IPv6 DNS server.
 
-My computer is configured to use:
+**Q9:** `google.com` resolved to `2a00:1450:4026:808::200e` and `github.com` resolved to `140.82.121.4`. Large websites can have multiple IPs for performance and reliability.
 
-### Q9
+**Q10:** Someone watching DNS could see which websites I look up, even if the websites use HTTPS.
 
-My DNS lookup results were:
+## Path to the internet
 
-Large websites may have multiple IP addresses to distribute traffic, provide redundancy, and improve performance.
+* Hops to example.com: `9`
+* First hop: `172.20.10.1`
 
-### Q10
+**Q11:** It took 9 hops to reach example.com. The first hop was my gateway.
 
-Someone monitoring DNS traffic could see which domain names I look up. This could reveal information about the websites and services I use even when the actual website traffic is protected by HTTPS.
+**Q12:** `* * *` usually means a router did not respond to the traceroute request. It does not necessarily mean the connection is broken.
 
-## Path to the Internet
+## Listening ports
 
-* Hops to example.com:
-* First hop:
+| Port        | Protocol | Interface | Common use          |
+| ----------- | -------- | --------- | ------------------- |
+| 135         | TCP      | All       | Windows RPC         |
+| 139         | TCP      | All       | NetBIOS             |
+| 445         | TCP      | All       | SMB/file sharing    |
+| 5040        | TCP      | All       | Application/service |
+| 6463        | TCP      | Localhost | Application         |
+| 42050       | TCP      | Localhost | Application         |
+| 49664–49670 | TCP      | All       | Windows RPC         |
 
-### Q11
+**Q13:** My computer has several ports listening on all interfaces and a few that are localhost-only.
 
-It took approximately:
+**Q14:** Port 445 is commonly used for SMB/file sharing. A localhost-only port is less exposed because other devices normally cannot connect to it. A port listening on all interfaces has more exposure.
 
-The first hop was:
-
-### Q12
-
-A `* * *` result does not necessarily mean the connection is broken. Some routers or network devices do not respond to traceroute packets or may filter those responses while still forwarding normal traffic.
-
-## Listening Ports
-
-| Port | Protocol | Interface (localhost / all) | Common use |
-| ---- | -------- | --------------------------- | ---------- |
-|      |          |                             |            |
-|      |          |                             |            |
-|      |          |                             |            |
-
-### Q13
-
-The listening ports on my machine are listed above. Ports listening on localhost are generally only reachable from my own computer, while ports listening on all interfaces may be reachable from other devices on the network.
-
-### Q14
-
-A port listening only on localhost has a smaller attack surface because other devices cannot normally connect directly to it. A port listening on all interfaces can accept network connections and therefore requires more attention from a security perspective.
-
-### Q15
-
-My machine is exposing:
+**Q15:** I was surprised that my computer had several network-facing ports open. I would investigate ports 139 and 445 because they are related to Windows network/file sharing.
 
 ## Reflection
 
-This exercise helped me understand how the networking concepts from the course appear on my own computer. One thing that surprised me was:
-
-I noticed that:
-
-The open port I would most want to investigate is:
-
-I would investigate it because:
-
-The command I think I will use most often is:
-
-I would use it because:
-
-Overall, this exercise showed me that understanding IP addresses, gateways, DNS, routing, and listening ports is useful for understanding the security of a computer and network.
+I was surprised by how many ports were listening on my computer. I expected there to be fewer. The ports I would investigate most are 139 and 445 because they are used for Windows network and file sharing .The command I think I will use most is `ipconfig /all`. This task also made it easier to understand how IP addresses, DNS, gateways and ports work together. Before doing this, these felt more difficult, but checking my own computer made them much easier to understand.
