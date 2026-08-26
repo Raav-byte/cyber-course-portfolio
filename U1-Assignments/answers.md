@@ -62,3 +62,29 @@ Because the router connects two different networks.
 
 The 172.16.31.0 network and the 10.10.10.0 network.
 
+# Packet Tracer - Use Telnet and SSH
+
+## Part 1: Verify Connectivity
+
+### Step 1: Verify IP Address on a PC
+
+**Question: What command did you use to verify the IP address from DHCP?**
+
+I used the `ipconfig` command.
+
+## Part 2: Access a Remote Device
+
+### Step 1: Telnet to HQ
+
+**Question: Were you successful? What was the output?**
+
+No. Telnet was not successful. The connection was refused because Telnet is disabled on the router.
+
+### Step 2: SSH to HQ
+
+**Question: What is the prompt after accessing the router successfully via SSH?**
+
+The prompt is:
+
+`HQ>`
+
