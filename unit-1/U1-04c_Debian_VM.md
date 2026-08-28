@@ -1,7 +1,7 @@
 # My Debian 13 Lab VM
 
 ## VM identity
-- VM name (in VirtualBox): 
+- VM name (in VirtualBox): raav-lab
 - Hostname (inside Debian): 
 - Debian version (from `cat /etc/debian_version`): 
 - Kernel version (from `uname -r`): 
