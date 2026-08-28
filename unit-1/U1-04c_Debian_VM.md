@@ -7,9 +7,9 @@
 - Kernel version (from `uname -r`): 
 
 ## Allocated resources
-- CPU cores: 
+- CPU cores: 2
 - RAM: 
-- Disk size: 
+- Disk size: 20,00 GB
 - Network mode: NAT (default)
 
 ## User account
