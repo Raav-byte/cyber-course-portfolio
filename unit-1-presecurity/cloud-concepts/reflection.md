@@ -16,7 +16,7 @@ The main pattern is that IT has become more flexible and less connected to physi
 
 ### 3. Deployment vs Service Models
 
-A deployment model answers **where the technology is hosted**, while a service model answers **how much of the technology the customer has to manage**. For example, public cloud means the infrastructure is provided by a cloud company, while SaaS means I mainly use finished software instead of managing the servers behind it. Microsoft 365 is an example of public cloud + SaaS because I use the software through the internet without managing the servers myself.
+A deployment model answers **where the technology is hosted**, while a service model answers **how much of the technology the customer has to manage**. For example, public cloud means the infrastructure is provided by a cloud company, while SaaS means I mainly use finished software instead of managing the servers behind it.Spotify is an example of a public cloud + SaaS service because I use the application over the internet without managing the servers or hardware that provide the service.
 
 ### 4. Shared Responsibility Model
 
