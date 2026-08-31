@@ -29,4 +29,4 @@
 - Date taken: 
 
 ## What worked, what didn't
-Two or three sentences on the install experience. What was confusing? What surprised you? What would you do differently if you did it again?
+I was doing it till one part which i was stuck in which i had to pick the graphical install but i think i choose the word one and wasted time until the teacher helped me and there were other stuff which were very confusion but with the help of instuctions i managed it but i couldnt find many of the information from the VM and class ended so i couldnt finish this task fully.
