@@ -8,7 +8,7 @@ I reviewed the Cloud Concepts lecture (U1-04a) and reflected on what cloud compu
 
 ### 1. Cloud in my own words
 
-Instead of buying and taking care of your own powerful computers and storage, you can rent them from a company over the internet. You are basically paying for computing power, storage, software, or other IT services when you need them. The main difference is that you don't have to own and maintain all the physical hardware yourself.
+Instead of buying and taking care of your own powerful computers and storage, you can rent them from a company over the internet. You can basically pay for computing power, storage, software, or other IT services when you need them. The main difference is that you don't have to own and maintain all the physical hardware yourself.
 
 ### 2. Traditional IT -> Virtualization -> Cloud -> Containers
 
@@ -16,7 +16,7 @@ The main pattern is that IT has become more flexible and less connected to physi
 
 ### 3. Deployment vs Service Models
 
-A deployment model answers **where the technology is hosted**, while a service model answers **how much of the technology the customer has to manage**. For example, public cloud means the infrastructure is provided by a cloud company, while SaaS means I mainly use finished software instead of managing the servers behind it.Spotify is an example of a public cloud + SaaS service because I use the application over the internet without managing the servers or hardware that provide the service.
+A deployment model answers **where the technology is hosted**, while a service model answers **how much of the technology the customer has to manage**. For example, public cloud means the infrastructure is provided by a cloud company, while SaaS means I mainly use finished software instead of managing the servers behind it. Spotify is an example of a public cloud + SaaS service because I use the application over the internet without managing the servers or hardware that provide the service.
 
 ### 4. Shared Responsibility Model
 
@@ -34,7 +34,7 @@ A helpdesk technician could get a ticket from a user who cannot log into their M
 
 ### 7. My Personal Takeaway
 
-My main takeaway is that the cloud is not really something mysterious or separate from normal IT. There are still physical computers and data centres behind it, but someone else is managing the hardware for you. I also understand better now why security is still my responsibility when using an online service, especially things like passwords, MFA, permissions, and data.
+My main takeaway is that the cloud is not really something mysterious or abnormal in IT. There are still physical computers and data centres behind it, but someone else is managing the hardware for you which sounds scary to me because your sensitive informations could be leaked because of a small error. I also understand better now why security is still my responsibility when using an online service.
 
 ---
 
