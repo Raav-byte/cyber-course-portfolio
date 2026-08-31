@@ -34,7 +34,7 @@ A helpdesk technician could get a ticket from a user who cannot log into their M
 
 ### 7. My Personal Takeaway
 
-My main takeaway is that the cloud is not really something mysterious or abnormal in IT. There are still physical computers and data centres behind it, but someone else is managing the hardware for you which sounds scary to me because your sensitive informations could be leaked because of a small error. I also understand better now why security is still my responsibility when using an online service.
+In my opinion the cloud is not really something mysterious or abnormal in IT. There are still physical computers and data centres behind it, but someone else is managing the hardware for you which sounds scary to me because your sensitive informations could be leaked because of a small error. I also understand better now why security is still my responsibility when using an online service.
 
 ---
 
