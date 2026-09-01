@@ -2,9 +2,9 @@
 
 ## VM identity
 - VM name (in VirtualBox): raav-lab
-- Hostname (inside Debian): 
-- Debian version (from `cat /etc/debian_version`): 
-- Kernel version (from `uname -r`): 
+- Hostname (inside Debian): debian-lab
+- Debian version (from `cat /etc/debian_version`): 13.6
+- Kernel version (from `uname -r`): 6.12.105+deb13-amd64
 
 ## Allocated resources
 - CPU cores: 2
@@ -13,15 +13,15 @@
 - Network mode: NAT (default)
 
 ## User account
-- Username: 
+- Username: Varia
 - Root account: disabled / enabled (which did you choose?)
-- Sudo works: yes / no
+- Sudo works: yes
 
 ## Desktop environment
 - (GNOME / XFCE / KDE / no desktop — command line only)
 
 ## Guest Additions
-- Installed: yes / no
+- Installed: yes
 - Version (from `VBoxClient --version` in the VM): 
 
 ## Snapshot
