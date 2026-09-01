@@ -29,4 +29,4 @@
 - Date taken: 9/1/2026
 
 ## What worked, what didn't
-I was doing it till one part which i was stuck in which i had to pick the graphical install but i think i choose the word one and wasted time until the teacher helped me and there were other stuff which were very confusion but with the help of instuctions i managed it but i couldnt find many of the information from the VM and class ended so i couldnt finish this task fully.
+I was doing it till one part which i was stuck in which i had to pick the graphical install but i think i choose the word one and wasted time until the teacher helped me and there were other stuff which were very confusion but with the help of instuctions i managed it. It was hard navigation into terminal today to get all info from it but due to our legendary teacher dimi i did it.
