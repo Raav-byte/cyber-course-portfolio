@@ -8,20 +8,20 @@
 
 ## Allocated resources
 - CPU cores: 2
-- RAM: 
+- RAM: 2 GB 
 - Disk size: 20,00 GB
 - Network mode: NAT (default)
 
 ## User account
 - Username: Varia
-- Root account: disabled / enabled (which did you choose?)
+- Root account: disabled 
 - Sudo works: yes
 
 ## Desktop environment
-- (GNOME / XFCE / KDE / no desktop — command line only)
+ - GNOME
 
 ## Guest Additions
-- Installed: yes
+- Installed: No
 - Version (from `VBoxClient --version` in the VM): 
 
 ## Snapshot
