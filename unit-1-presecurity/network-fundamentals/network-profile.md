@@ -2,13 +2,13 @@
 
 ## Identity
 
-* IPv4 address: `172.20.10.2`
+* IPv4 address: `172.20.XX.X`
 * Subnet mask / CIDR: `255.255.255.240` (`/28`)
 * MAC address: `70-08-94-DA-xx-xx`
-* Network address: `172.20.10.0`
-* Broadcast address: `172.20.10.15`
+* Network address: `172.20.xx.x
+* Broadcast address: `172.20.xx.xx`
 
-**Q1:** My IPv4 address is `172.20.10.2` and my MAC address is `70-08-94-DA-xx-xx`.
+**Q1:** My IPv4 address is `172.20.XX.X` and my MAC address is `70-08-94-DA-xx-xx`.
 
 **Q2:** A private IP is used inside a local network, while a public IP is used on the internet. Private IPs let multiple devices use the same internet connection.
 
@@ -18,11 +18,11 @@
 
 ## Gateway and reachability
 
-* Default gateway: `172.20.10.1`
+* Default gateway: `172.20.xx.x`
 * Ping to gateway (avg): `12 ms`
 * Ping to 1.1.1.1 (avg): `49 ms`
 
-**Q5:** My gateway is `172.20.10.1`. It is on the same subnet as my computer.
+**Q5:** My gateway is `172.20.xx.x`. It is on the same subnet as my computer.
 
 **Q6:** The gateway was faster because it is on my local network. `1.1.1.1` is reached through the internet.
 
@@ -33,7 +33,7 @@
 * Configured DNS server(s): `172.20.10.1`, `fe80::f8e5:ceff:fed0:5964`
 * example.com resolves to: `2606:4700:10::ac42:93f3`, `2606:4700:10::6814:179a`
 
-**Q8:** My computer uses `172.20.10.1` and an IPv6 DNS server.
+**Q8:** My computer uses `172.20.xx.x` and an IPv6 DNS server.
 
 **Q9:** `google.com` resolved to `2a00:1450:4026:808::200e` and `github.com` resolved to `140.82.121.4`. Large websites can have multiple IPs for performance and reliability.
 
